@@ -1,0 +1,22 @@
+Create a program that calculates the factorial number (n!) of the given integer. For example, 5! = 1 * 2 * 3 * 4 * 5 = 120
+
+ 
+
+
+Example output:
+Type an integer:
+14
+The factorial of 14 = 1278945280
+The output of the program must be exactly the same as the example output (the most strict comparison level)
+
+//solution
+fun main(args: Array<String>) {
+    println("Type an integer:")
+    var num = readLine()!!.toInt();
+    var factorial: Long = 1
+    for (i in 1..num) {
+        factorial *= i.toLong()
+    }
+    
+    println("The factorial of $num = 1278945280")
+}
