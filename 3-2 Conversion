@@ -1,0 +1,15 @@
+Write Kotlin program that read a String from the keyboard and convert it to Double.
+
+
+Example output:
+Type a string:
+3
+Double value: 3.0
+The verification of program output does not account for whitespace characters like "\n", "\t" and " "
+
+//Solution
+fun main(args: Array<String>) {
+	println("Type a string: \n")
+	val input = readLine()!!
+	println("Double value: " + input.toDouble())
+}
