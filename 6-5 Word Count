@@ -1,0 +1,28 @@
+Create a program that ask user to type words. The program execution stops when a user types letter 'x'. Finally, program prints the number of words.
+
+
+Example output:
+Type a word (Type x to exit)
+Hello
+Type a word (Type x to exit)
+Kotlin
+Type a word (Type x to exit)
+Viope
+Type a word (Type x to exit)
+x
+You typed 3 words
+The verification of program output does not account for whitespace characters like "\n", "\t" and " "
+
+//solution
+fun main(args: Array<String>) {
+    var count = 0
+    while (true) {
+        println("Type a word (Type x to exit)")
+        var input = readLine()
+        if (input == "x") {
+            break;
+        }
+        count++
+    }
+    println("You typed $count words")
+}
