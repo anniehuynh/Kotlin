@@ -1,0 +1,17 @@
+Create a program that intialize two String variables: firstName and lastName. The value of the firstName is Kate and lastName is Hudson.
+
+The program prints the intials of the name variables.
+
+
+Example output:
+Your initials: K.H
+The verification of program output does not account for whitespace characters like "\n", "\t" and " "
+
+//Solution
+
+fun main(args: Array<String>) {
+    var firstName: String = "Kate";
+    var firstNameChar = firstName[0];
+    var lastName: String = "Hudson";
+    var lastNameChar = lastName[0];
+    println("Your initials: " + "$firstNameChar" + "." + "$lastNameChar")}
