@@ -1,0 +1,29 @@
+Create Kotlin program that read three integers from the keyboard. The program prints the largest number to the screen.
+
+
+Example output:
+Type the first number: 
+-5
+Type the second number: 
+0
+Type the third number: 
+3
+The largest number = 3
+The verification of program output does not account for whitespace characters like "\n", "\t" and " "
+
+//Solution
+fun main(args: Array<String>) {
+	println("Type the first number:")
+	var num1 = readLine()!!
+	println("Type the second number:")
+	var num2 = readLine()!!
+	println("Type the third number:")
+	var num3 = readLine()!!
+	if ( num1 >= num2 && num1 >= num3) {
+	println("The largest number = $num1")
+	} else if (num2 > num1 && num2 >= num3){
+	println("The largest number = $num2")
+	} else{
+	println("The largest number = $num3")
+	}
+}
