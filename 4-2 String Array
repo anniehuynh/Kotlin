@@ -1,0 +1,13 @@
+Create an array of strings with the following values ["One", "Two", "Three", "Four", "Five"]. Print out the second element of the array.
+
+
+Example output:
+Two
+The output of the program must be exactly the same as the example output (the most strict comparison level)
+
+//Solution
+fun main(args: Array<String>) {
+	var strings = arrayOf<String>("One", "Two", "Three", "Four", "Five")
+	println(strings[1])
+	
+}
