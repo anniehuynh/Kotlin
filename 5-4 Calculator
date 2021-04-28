@@ -1,0 +1,33 @@
+Create a calculator that ask two integers and an operator (+, - or *). The program then calculates the result using the typed operator. You have to use Java Scanner class and the when conditional statement in this exercise.
+
+
+Example output:
+Type the first number:
+5
+Type the second number:
+12
+Type the operator (+,-,*):
++
+5 + 12 = 17
+The verification of program output does not account for whitespace characters like "\n", "\t" and " "
+
+//Solution
+
+import java.util.Scanner
+fun main(args: Array<String>) {
+	println("Type the first number:")
+	val input1 = Scanner(System.`in`)
+	val num1 = input1.nextInt()
+	println("Type the second number:")
+	val input2 = Scanner(System.`in`)
+	val num2 = input2.nextInt()
+	println("Type the operator (+,-,*):")
+	val operator = Scanner(System.`in`)
+	val char = operator.next()
+	when (char) {
+		"+" -> println("$num1 + $num2 = ${num1 + num2}")
+		"-" -> println("$num1 - $num2 = ${num1 - num2}")
+		"*" -> println("$num1 * $num2 = ${num1 * num2}")
+		
+	}
+}
