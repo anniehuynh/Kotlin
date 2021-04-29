@@ -1,0 +1,34 @@
+Create a program that asks three integers from a user. Create a function that takes three integers as arguments and returns the value of the largest one (The function name is findMax). The function is invoked in the main function with the values that was entered.
+
+
+Example output:
+Type the first integer:
+7
+Type the second integer:
+-3
+Type the third integer:
+2
+The largest one is: 7
+The verification of program output does not account for whitespace characters like "\n", "\t" and " "
+
+//solution
+
+fun main(args: Array<String>) {
+	println("Type the first integer:")
+	val num1 = readLine()!!.toInt()
+	println("Type the second integer:")
+	val num2 = readLine()!!.toInt()
+	println("Type the third integer:")
+	val num3 = readLine()!!.toInt()
+	println("The largest one is: " + findMax(num1, num2, num3))
+}
+
+fun findMax(num1: Int, num2: Int, num3: Int): Int{
+	if ((num1 > num2) && (num1 > num3)) {
+		return num1
+	} else if ((num2 > num1) && (num2 > num3)) {
+		return num2
+	} else {
+		return num3
+	}
+}
