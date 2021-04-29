@@ -1,0 +1,20 @@
+Create a function called printGreeting that takes one string typed argument (firstName) and it prints out a Hello greeting. Override the printGreeting function that it can also take two arguments firstName and lastName. Call the both functions using firstName = John and lastName = Johnson values.
+
+
+Example output:
+Hello John
+Hello John Johnson
+The verification of program output does not account for whitespace characters like "\n", "\t" and " "
+
+//solution
+
+fun main(args: Array<String>) {
+	printGreeting("John")
+	printGreeting("John", "Johnson")
+}
+fun printGreeting(firstName: String){
+	println("Hello $firstName")
+}
+fun printGreeting(firstName: String, lastName: String){
+	println("Hello $firstName $lastName")
+}
